@@ -33,6 +33,7 @@ namespace Infrastructure.Gameplay
 
         private void CreateItems()
         {
+            // Возможность задавать параметры предметов в рантайме через DI
             var rifle = _container.Instantiate<Weapon>(new object[] { "Blaster", 50 });
             var parachute = _container.Instantiate<Parachute>();
             var rocketPack = _container.Instantiate<RocketPack>(new object[] { 3 });

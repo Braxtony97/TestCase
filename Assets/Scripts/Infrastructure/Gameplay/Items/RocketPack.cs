@@ -6,6 +6,7 @@ namespace Infrastructure.Gameplay.Items
     {
         public int Charges { get; }
         
+        // Параметры получаются через DI при вызове Instantiate
         public RocketPack(int charges, string name = null) : base(name ?? "RocketPack")
         {
             Charges = charges;
